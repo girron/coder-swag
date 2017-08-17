@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mkl-kc-p5y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mkl-kc-p5y">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,6 +19,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CategoriesVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="haJ-Ce-emf"/>
+                        <viewControllerLayoutGuide type="bottom" id="jRo-xN-kSR"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,25 +33,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QGD-yt-uJT">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QGD-yt-uJT">
                                 <rect key="frame" x="0.0" y="69" width="375" height="534"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="Vxb-qE-5TE" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="150" id="Vxb-qE-5TE" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vxb-qE-5TE" id="DwC-Lg-A7A">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="l78-Tg-ieY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="l78-Tg-ieY">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="143.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbH-vG-sWg">
                                                     <rect key="frame" x="110" y="61" width="156" height="28"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="28" id="JCA-S0-DfR"/>
-                                                        <constraint firstAttribute="width" constant="156" id="Jgp-wZ-lTp"/>
+                                                        <constraint firstAttribute="height" constant="28" id="M5k-Ud-Uxp"/>
+                                                        <constraint firstAttribute="width" constant="156" id="cHN-rM-to8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,12 +59,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="l78-Tg-ieY" firstAttribute="top" secondItem="DwC-Lg-A7A" secondAttribute="top" id="BI4-1t-NeU"/>
-                                                <constraint firstItem="pbH-vG-sWg" firstAttribute="centerY" secondItem="DwC-Lg-A7A" secondAttribute="centerY" id="LI4-nO-UIf"/>
-                                                <constraint firstItem="pbH-vG-sWg" firstAttribute="centerX" secondItem="DwC-Lg-A7A" secondAttribute="centerX" id="OXd-NT-mRu"/>
-                                                <constraint firstAttribute="bottom" secondItem="l78-Tg-ieY" secondAttribute="bottom" id="RLf-bg-7vV"/>
-                                                <constraint firstItem="l78-Tg-ieY" firstAttribute="leading" secondItem="DwC-Lg-A7A" secondAttribute="leading" id="TCk-jb-xTB"/>
-                                                <constraint firstAttribute="trailing" secondItem="l78-Tg-ieY" secondAttribute="trailing" id="ztd-Py-Exa"/>
+                                                <constraint firstItem="pbH-vG-sWg" firstAttribute="centerX" secondItem="DwC-Lg-A7A" secondAttribute="centerX" id="29M-ak-1Nx"/>
+                                                <constraint firstItem="pbH-vG-sWg" firstAttribute="centerY" secondItem="DwC-Lg-A7A" secondAttribute="centerY" id="J2n-kS-n6D"/>
+                                                <constraint firstAttribute="bottom" secondItem="l78-Tg-ieY" secondAttribute="bottom" constant="3" id="Qg9-6O-Xe9"/>
+                                                <constraint firstItem="l78-Tg-ieY" firstAttribute="top" secondItem="DwC-Lg-A7A" secondAttribute="top" constant="3" id="nwV-a7-VIq"/>
+                                                <constraint firstAttribute="trailing" secondItem="l78-Tg-ieY" secondAttribute="trailing" id="qbg-hW-tMq"/>
+                                                <constraint firstItem="l78-Tg-ieY" firstAttribute="leading" secondItem="DwC-Lg-A7A" secondAttribute="leading" id="uXr-8A-puS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -73,12 +77,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="QGD-yt-uJT" secondAttribute="trailing" id="Cdf-s7-QkU"/>
-                            <constraint firstItem="gay-qp-xrk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="DpW-Gf-xV7"/>
-                            <constraint firstAttribute="bottom" secondItem="QGD-yt-uJT" secondAttribute="bottom" id="YuC-zI-ses"/>
-                            <constraint firstItem="QGD-yt-uJT" firstAttribute="top" secondItem="gay-qp-xrk" secondAttribute="bottom" constant="16" id="bfn-xQ-OVu"/>
-                            <constraint firstItem="gay-qp-xrk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eI3-WD-L7g"/>
-                            <constraint firstItem="QGD-yt-uJT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hu0-XC-nDw"/>
+                            <constraint firstItem="gay-qp-xrk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="50u-E8-DEu"/>
+                            <constraint firstItem="jRo-xN-kSR" firstAttribute="top" secondItem="QGD-yt-uJT" secondAttribute="bottom" id="KIG-JL-YhE"/>
+                            <constraint firstItem="QGD-yt-uJT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MM9-nY-maA"/>
+                            <constraint firstItem="gay-qp-xrk" firstAttribute="top" secondItem="haJ-Ce-emf" secondAttribute="bottom" constant="30" id="U9s-wH-BuL"/>
+                            <constraint firstAttribute="trailing" secondItem="QGD-yt-uJT" secondAttribute="trailing" id="p12-6i-GDm"/>
+                            <constraint firstItem="QGD-yt-uJT" firstAttribute="top" secondItem="gay-qp-xrk" secondAttribute="bottom" constant="16" id="wrS-Ti-ufI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="CEA-dN-o8r"/>

@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F315B6C1F4621F1009C140E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F315B6B1F4621F1009C140E /* DataService.swift */; };
 		4FD475711F45E2880052D342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD475701F45E2880052D342 /* AppDelegate.swift */; };
 		4FD475731F45E2880052D342 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD475721F45E2880052D342 /* CategoriesVC.swift */; };
 		4FD475761F45E2880052D342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD475741F45E2880052D342 /* Main.storyboard */; };
 		4FD475781F45E2880052D342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD475771F45E2880052D342 /* Assets.xcassets */; };
 		4FD4757B1F45E2880052D342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD475791F45E2880052D342 /* LaunchScreen.storyboard */; };
 		4FD475861F45E6310052D342 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD475851F45E6310052D342 /* CategoryCell.swift */; };
+		4FD475881F45E80E0052D342 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD475871F45E80E0052D342 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F315B6B1F4621F1009C140E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4FD4756D1F45E2880052D342 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD475701F45E2880052D342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FD475721F45E2880052D342 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		4FD4757A1F45E2880052D342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FD4757C1F45E2880052D342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FD475851F45E6310052D342 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4FD475871F45E80E0052D342 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F315B6A1F4621DF009C140E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F315B6B1F4621F1009C140E /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4FD475641F45E2880052D342 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +68,7 @@
 		4FD4756F1F45E2880052D342 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				4F315B6A1F4621DF009C140E /* Services */,
 				4FD475831F45E5DD0052D342 /* Model */,
 				4FD475841F45E5E90052D342 /* View */,
 				4FD475821F45E5D30052D342 /* Controller */,
@@ -79,6 +92,7 @@
 		4FD475831F45E5DD0052D342 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4FD475871F45E80E0052D342 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +179,8 @@
 				4FD475731F45E2880052D342 /* CategoriesVC.swift in Sources */,
 				4FD475711F45E2880052D342 /* AppDelegate.swift in Sources */,
 				4FD475861F45E6310052D342 /* CategoryCell.swift in Sources */,
+				4FD475881F45E80E0052D342 /* Category.swift in Sources */,
+				4F315B6C1F4621F1009C140E /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
