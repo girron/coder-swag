@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F00D3EB1F4773E600259C54 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00D3EA1F4773E600259C54 /* ProductCell.swift */; };
 		4F315B6C1F4621F1009C140E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F315B6B1F4621F1009C140E /* DataService.swift */; };
 		4FD475711F45E2880052D342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD475701F45E2880052D342 /* AppDelegate.swift */; };
 		4FD475731F45E2880052D342 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD475721F45E2880052D342 /* CategoriesVC.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F00D3EA1F4773E600259C54 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		4F315B6B1F4621F1009C140E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4FD4756D1F45E2880052D342 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD475701F45E2880052D342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD475851F45E6310052D342 /* CategoryCell.swift */,
+				4F00D3EA1F4773E600259C54 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				4FD475731F45E2880052D342 /* CategoriesVC.swift in Sources */,
 				4FD475711F45E2880052D342 /* AppDelegate.swift in Sources */,
 				4FD475861F45E6310052D342 /* CategoryCell.swift in Sources */,
+				4F00D3EB1F4773E600259C54 /* ProductCell.swift in Sources */,
 				4FD475881F45E80E0052D342 /* Category.swift in Sources */,
 				4F315B6C1F4621F1009C140E /* DataService.swift in Sources */,
 			);
